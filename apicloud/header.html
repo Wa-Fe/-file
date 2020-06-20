@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>初始化进入导航栏隐藏, 向上滑动导航栏显示 | 文档</title>
+    <meta name="generator" content="VuePress 1.5.1">
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-MWG558Z8PK" async="true"></script>
+    <script> window.dataLayer = window.dataLayer || [];                    function gtag(){dataLayer.push(arguments);}                    gtag('js', new Date());                    gtag('config', 'G-MWG558Z8PK');</script>
+    <meta name="description" content="VuePress">
+    <link rel="preload" href="/assets/css/0.styles.8fbd8908.css" as="style"><link rel="preload" href="/assets/js/app.b9ab769d.js" as="script"><link rel="preload" href="/assets/js/2.7cd0d679.js" as="script"><link rel="preload" href="/assets/js/8.33638e34.js" as="script"><link rel="prefetch" href="/assets/js/3.4cbe2b07.js"><link rel="prefetch" href="/assets/js/4.c17a8625.js"><link rel="prefetch" href="/assets/js/5.3c07a9ad.js"><link rel="prefetch" href="/assets/js/6.3c245983.js"><link rel="prefetch" href="/assets/js/7.48e21020.js"><link rel="prefetch" href="/assets/js/9.5f5f3e65.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8fbd8908.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>apicloud</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/apicloud/message.html" class="sidebar-link">滚动消息</a></li><li><a href="/apicloud/addresslist.html" class="sidebar-link">地址</a></li><li><a href="/apicloud/header.html" aria-current="page" class="active sidebar-link">导航栏滑动显示隐藏</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="初始化进入导航栏隐藏-向上滑动导航栏显示"><a href="#初始化进入导航栏隐藏-向上滑动导航栏显示" class="header-anchor">#</a> 初始化进入导航栏隐藏, 向上滑动导航栏显示</h3> <h4 id="html代码"><a href="#html代码" class="header-anchor">#</a> html代码</h4> <div class="language-html extra-class"><pre class="language-html"><code>   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>aui-bar aui-bar-nav<span class="token punctuation">'</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>heade<span class="token punctuation">'</span></span> <span class="token attr-name">:</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token punctuation">{</span> <span class="token string">'background-color'</span><span class="token punctuation">:</span> <span class="token string">'rgba(255,255,255,'</span> +opacity +<span class="token string">')'</span><span class="token punctuation">}</span></span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>aui-pull-left aui-btn<span class="token punctuation">'</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>api.closeWin()<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>aui-iconfont aui-icon-left<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>aui-title<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>{{title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+       <span class="token comment">&lt;!-- &lt;a class='aui-pull-right aui-btn'&gt;
+                &lt;span class='aui-iconfont'&gt;&lt;/span&gt;
+            &lt;/a&gt; --&gt;</span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h4 id="js代码"><a href="#js代码" class="header-anchor">#</a> js代码</h4> <div class="language-js extra-class"><pre class="language-js"><code>    <span class="token comment">// 初始化设置透明程度 </span>
+    opacity<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// vue方法</span>
+        <span class="token function-variable function">mounted</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'scroll'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleScroll<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+        <span class="token function-variable function">unmounted</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            window<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">'scroll'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleScroll<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+        methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token function-variable function">handleScroll</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">var</span> top <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop
+                <span class="token keyword">this</span><span class="token punctuation">.</span>opacity <span class="token operator">=</span> top <span class="token operator">/</span> <span class="token number">300</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>opacity <span class="token operator">&gt;</span> <span class="token number">0.1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    vm<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">&quot;商品详情&quot;</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                    vm<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/apicloud/addresslist.html" class="prev">
+        地址
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b9ab769d.js" defer></script><script src="/assets/js/2.7cd0d679.js" defer></script><script src="/assets/js/8.33638e34.js" defer></script>
+  </body>
+</html>
